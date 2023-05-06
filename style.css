@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0px;
+    background-color: black;
+  }
+  
+  * {
+    font-family: "Manrope", sans-serif;
+    cursor: default;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  h1{
+    color: white;
+    font-weight: lighter;
+    font-size: 2rem;
+  }
+  #boldit{
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+  #boldit-task{
+    color: orangered;
+    font-weight: lighter;
+    font-size:xx-large;
+  }
+  
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 20px;
+    padding-bottom: 30px;
+    /* padding-right: 40px; */
+  }
+  .second-screen-button{
+padding: 30px;
+    border-radius: 50%;
+    background-color: orangered;
+    color: black;
+  }
+  
+  .task-modal {
+    background-color: rgba(0, 0, 0, 0.367);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .single-task-modal {
+    /* background-color: rgba(0, 0, 0, 0.367); */
+    background-color: black;
+    /* backdrop-filter: blur(2px); */
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .material-symbols-outlined{
+    color: cyan;
+  }
+  #add-new-item{
+    color: cyan;
+  }
+  
+  #item-input{
+    height: 15%;
+    border-radius: 4px;
+    text-align: center;
+  }
+  #task-input{
+    height: 15%;
+    border-radius: 4px;
+    text-align: center;
+    background-color: whitesmoke;
+  }
+  #task-submit{
+    /* display: inline; */
+    color: black;
+    border-radius: 10px;
+    margin: 5px;
+    width: 75px;
+    background-color: orangered;
+    /* font-size: 18px; */
+    padding: 5px 10px;
+    /* border: 2px solid red; */
+  }
+  #item-submit{
+    /* display: inline; */
+    border-radius: 10px;
+    margin: 5px;
+    width: 75px;
+    background-color: orangered;
+    /* font-size: 18px; */
+    padding: 5px 10px;
+    /* border: 2px solid red; */
+  }
+  #modal-close{
+    width: 75px;
+    /* display: inline; */
+    color:black ;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: orangered;
+    /* font-size: 18px; */
+    padding: 5px 10px;
+    /* border: 2px solid red; */
+  }
+  #parker{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    
+  }
+  
+  .item-modal {
+    background-color: rgba(0, 0, 0, 0.367);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  
+  .add-option {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+  }
+  
+  .taskContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .taskCard {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-width: 220px;
+    min-height: 330px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .taskTitle {
+    color: firebrick;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: solid 5px red;
+  }
+  li{
+    list-style: none;
+  }
+  
+  .buttonContainer{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .plus-icon{
+    /* display: block; */
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+  }
+  .bin-icon{
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+    
+  }
+  .markBtn{
+    display: inline;
+    color: white;
+    background-color: blue;
+    border-radius: 8px;
+    padding: 2px;
+    margin-left: 8px;
+  
+  }
+  
+  #box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cheit{
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 0px 100px;
+  }

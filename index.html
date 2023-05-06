@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div id="single-task-modal" class="single-task-modal">
+      <div class="topBar">
+        <button onclick="ToggleSingelTaskModal()"  style="background-color: black;border: black;"> <span style="color: blue;font-weight: bolder;font-size: 50px;"><-</span> <span style="color: rgb(244, 244, 249);font-weight: bolder;font-size: 30px;">Back</span> </button>
+       
+        <h1 id="single-task-name"></h1>
+        <!-- <div id="box"></div> -->
+        <!-- <button class="second-screen-button"> Add New</button> -->
+        <button style="background-color: black;border: black;"> <span style="color: blue;font-weight: bolder;font-size: 50px;">+</span><span style="color: rgb(245, 245, 248);font-weight: bolder;font-size: 30px;"> Add New</span> </button>
+        <div id="box"></div>
+      </div>
+    </div>
+
+
+    <div id="task-modal" class="task-modal">
+      <div class="box">
+        <h2>Add New Task</h2>
+        <input type="text" id="task-input" placeholder="Enter the Task Name" />
+        <div id="parker">
+          <input type="button" value="Add" id="task-submit" onclick="addTask()" />
+          <input
+          type="button"
+          value="Close"
+          id="modal-close"
+          onclick="ToggleTaskModal()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="item-modal" class="item-modal">
+      <div class="box">
+        <h2>Add New Item</h2>
+        <input type="text" id="item-input" placeholder="Enter the Item name" />
+        <div id="parker">
+          <input type="button" value="Add" id="item-submit" onclick="addItem()" />  
+          <input
+          type="button"
+          value="Close"
+          id="modal-close"
+          onclick="ToggleItemModal()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="app-container">
+      <div class="topBar">
+        <h1><span id="boldit">Tasks</span> <span id="boldit-task">List</span>  </h1>
+        
+        <p id="add-option" class="add-option">
+          <span class="material-symbols-outlined"> add_circle </span>
+          <span id="add-new-item">Add New Item</span>
+        </p>
+      </div>
+      <hr>
+      <p class="cheit"></p>
+      
+      <div id="taskContainer" class="taskContainer">
+        <!-- All Task items will rendered inside this div  -->
+      </div>
+     
+    </div>
+  </body>
+  <script src="./script.js"></script>
+  <script src="https://kit.fontawesome.com/430b983362.js" crossorigin="anonymous"></script>
+</html>
