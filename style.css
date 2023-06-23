@@ -155,6 +155,7 @@ padding: 30px;
   }
   
   .taskContainer {
+ 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -163,6 +164,8 @@ padding: 30px;
   }
   
   .taskCard {
+    /* height: 100vh;
+    width: 100vw; */
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     min-width: 220px;
@@ -217,6 +220,14 @@ padding: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  
+  .cheit{
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 0px 100px;
+  }
+
   @media screen and (min-width:250px) and (max-width:600px){
     #back-button-of-single-page{
       display: none;
@@ -224,12 +235,4 @@ padding: 30px;
     #add-button-of-single-page{
       display: none;
     }
-  }
-
-  
-  .cheit{
-    color: white;
-    font-weight: bold;
-    font-size: 26px;
-    margin: 0px 100px;
   }
