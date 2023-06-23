@@ -217,6 +217,15 @@ padding: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  @media screen and (min-width:250px) and (max-width:600px){
+    #back-button-of-single-page{
+      display: none;
+    }
+    #add-button-of-single-page{
+      display: none;
+    }
+  }
+
   
   .cheit{
     color: white;
