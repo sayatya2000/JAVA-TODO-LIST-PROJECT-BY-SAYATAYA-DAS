@@ -37,7 +37,7 @@ function ToggleTaskModal() {
 
 function ToggleSingelTaskModal() {
 
-  const modal = document.getElementById("single-task-modal");
+  let modal = document.getElementById("single-task-modal");
   // console.log(modal.style.display);
   if (modal.style.display === "block") {
     modal.style.display = "none";
@@ -162,7 +162,17 @@ function renderItems() {
       const delIndex = delBtn.parentElement.parentElement.id;
       removeValueAtIndex(delIndex);
       renderItems();
-      renderSingleItem();
+      renderSingleItem()  
+      // taskCard.style.display ='none';
+      const modal = document.getElementById("single-task-modal");
+      // console.log(modal.style.display);
+      if (modal.style.display === "block") {
+        modal.style.display = "none";
+      } else {
+        modal.style.display = "block";
+      }
+      // taskInput.focus();
+      renderItems();
     });
 
     buttonContainer.appendChild(delBtn);
