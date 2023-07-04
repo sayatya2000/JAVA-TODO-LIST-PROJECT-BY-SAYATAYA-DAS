@@ -1,4 +1,5 @@
 const clickable = document.getElementById("add-option");
+// clickable = document.getElementsByClassName("add-option");
 clickable.addEventListener("click", ToggleTaskModal);
 
 var boxIndex = -1; // global
@@ -8,11 +9,11 @@ let myText = document.querySelector(".cheit");
 myText.innerText = "No item in the Todo List";
 
 // Task #1 : If item is entered , store it into an array of objects
-Todos = [
+Todos = []
   // Each Object inside Todos[] , represents an Task with 2 properties :
   // 1. Name of the Task
   // 2. Array of Items
-];
+;
 
 // Todos is an Array that will store all Tasks.
 
@@ -63,16 +64,16 @@ function ToggleItemModal() {
 }
 
 function removeValueAtIndex(index) {
-  console.log("Index to remove : ", index);
+  // console.log("Index to remove : ", index);
   // removes the value at 'index' from Todos
   const left = Todos.slice(0, index); // values from  '0' to 'index-1'
-  console.log("Left : ", left);
+  // console.log("Left : ", left);
 
   const right = Todos.slice(Number(index) + 1, Todos.length);
-  console.log("Right : ", right); // values from 'index+1' to Todos.length -1
+  // console.log("Right : ", right); // values from 'index+1' to Todos.length -1
 
   Todos = left.concat(right);
-  console.log("Combined : ", Todos);
+  // console.log("Combined : ", Todos);
 }
 
 function addTask() {
@@ -98,7 +99,7 @@ function addItem() {
 function renderSingleItem() {
   // const modal = document.getElementById("box");
   const singleContainer = document.getElementById("box");
-  singleContainer.innerHTML= "";
+  singleContainer.innerHTML= " ";
 
   const singleTask = 
   document.getElementsByClassName("taskCard")[singleTaskIndex];
@@ -108,7 +109,7 @@ function renderSingleItem() {
 
 // This Function displays all the data in athe Todos Array
 function renderItems() {
-  console.log("tODOS : ", Todos);
+  // console.log("tODOS : ", Todos);
   var index = 0;
 
   // Each time the RenderItems Function is called , it will empty the taskcontainer
@@ -180,7 +181,13 @@ function renderItems() {
 
     const itemList = document.createElement("ul");
     itemList.style.flex = "1";
+    // itemList.style.flexWrap= "wrap";
+    // itemList.style.flexDirection="row"
     itemList.style.lineHeight = "35px";
+    // itemList.style.flexWrap= "wrap";
+    
+  
+
 
     var k = 0;
     value.items.map((item) => {
