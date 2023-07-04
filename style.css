@@ -43,14 +43,14 @@ body {
   
   .topBar {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     
     padding-top: 20px;
     padding-bottom: 30px;
     /* padding-right: 40px; */
   }
   .second-screen-button{
-padding: 30px;
+    padding: 30px;
     border-radius: 50%;
     background-color: orangered;
     color: black;
@@ -78,10 +78,10 @@ padding: 30px;
     display: none;
   }
   .material-symbols-outlined{
-    color: cyan;
+    color: orangered;
   }
   #add-new-item{
-    color: cyan;
+    color: orangered;
   }
   
   #item-input{
@@ -168,10 +168,13 @@ padding: 30px;
     width: 100vw; */
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    min-width: 220px;
+    width: 220px;
+    word-wrap: break-word;
+    /* text-overflow: hidden; */
     min-height: 330px;
     border-radius: 15px;
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     padding: 10px;
   }
@@ -228,11 +231,15 @@ padding: 30px;
     margin: 0px 100px;
   }
 
-  @media screen and (min-width:250px) and (max-width:600px){
+  @media screen and (min-width:250px) and (max-width:500px) {
     #back-button-of-single-page{
       display: none;
     }
     #add-button-of-single-page{
       display: none;
+    }
+    .single-task-modal{
+      height: 140vh;
+      background-color:black;
     }
   }
