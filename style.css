@@ -62,7 +62,7 @@ body {
     
     height:200vh;
     width: 100vw;
-    position:absolute;
+    position:fixed;
     top:-250px;
     left: 0;
     /* transform: translate(-50%, -50%); */
@@ -75,8 +75,8 @@ body {
     /* background-color: rgba(0, 0, 0, 0.367); */
     background-color: black;
     /* backdrop-filter: blur(2px); */
-    position: absolute;
-    height: 100vh;
+    position: fixed;
+    height: 125vh;
     width: 100vw;
     top:0;
     left: 0;
@@ -144,7 +144,7 @@ body {
   .item-modal {
     background-color: rgba(0, 0, 0, 0.367);
     backdrop-filter: blur(2px);
-    position: absolute;
+    position:fixed;
     height: 200vh;
     width: 100vw;
     top: -250px;
@@ -250,6 +250,10 @@ body {
     .task-modal{
       height: 2000vh;
       top:-950%;
+    }
+    .single-task-modal{
+      height: 2000vh;
+      top: -950%;
     }
     .item-modal{
       height: 2000vh;
