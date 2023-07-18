@@ -60,10 +60,10 @@ body {
     background-color: rgba(0, 0, 0, 0.367);
     backdrop-filter: blur(2px);
     
-    height:2000vh;
+    height:200vh;
     width: 100vw;
     position:absolute;
-    top:-980%;
+    top:-250px;
     left: 0;
     /* transform: translate(-50%, -50%); */
     /* right: 0; */
@@ -145,9 +145,9 @@ body {
     background-color: rgba(0, 0, 0, 0.367);
     backdrop-filter: blur(2px);
     position: absolute;
-    height: 2000vh;
+    height: 200vh;
     width: 100vw;
-    top: -980%;
+    top: -250px;
     left: 0;
     display: none;
   }
@@ -243,12 +243,16 @@ body {
     #add-button-of-single-page{
       display: none;
     }
-    .single-task-modal{
+    /* .single-task-modal{
       height:140vh;
       background-color:black;
-    }
+    } */
     .task-modal{
       height: 2000vh;
-      top:-950%
+      top:-950%;
+    }
+    .item-modal{
+      height: 2000vh;
+      top: -950%;
     }
   }
